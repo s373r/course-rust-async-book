@@ -38,8 +38,10 @@ fn main() {
 
             println!("> start learn_song: {:?}", song);
 
+            // NOTE: we cannot use `std::thread::sleep()` since it is a blocking call
             task::sleep(Duration::from_millis(200)).await;
 
+            // NOTE: `println!` is a blocking thing but we don't take that into account here
             println!("> finish learn_song: {:?}", song);
 
             return song;
