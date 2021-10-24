@@ -4,9 +4,17 @@ Course link: https://rust-lang.github.io/async-book/
 
 Status: 🚧 `[work in progress]`
 
+### Index legend
+
+- 📝 - a link to a book page
+- ✏️ - a link to an `.rs` file (code)
+
 ## Index
 
-TODO
+- [📝 1. Getting Started](https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html)
+  - [📝 1.1. Why Async?](https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html)
+  - [📝 1.2. The State of Asynchronous Rust](https://rust-lang.github.io/async-book/01_getting_started/03_state_of_async_rust.html)
+  - [✏️ 1.3. async/.await Primer](01_getting_started/src/main.rs)
 
 ## Notes
 
