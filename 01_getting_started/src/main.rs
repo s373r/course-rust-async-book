@@ -44,7 +44,7 @@ fn main() {
             // NOTE: `println!` is a blocking thing but we don't take that into account here
             println!("> finish learn_song: {:?}", song);
 
-            return song;
+            song
         }
 
         async fn sing_song(song: Song) {
