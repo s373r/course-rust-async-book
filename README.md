@@ -22,6 +22,8 @@ Status: 🚧 `[work in progress]`
   - [📝 2.4. Executors and System IO](https://rust-lang.github.io/async-book/02_execution/05_io.html)
 - [📝 3. async/.await](https://rust-lang.github.io/async-book/03_async_await/01_chapter.html)
 - [✏️ 4. Pinning](04_pinning/src/main.rs)
+- [📝 5. Streams](https://rust-lang.github.io/async-book/05_streams/01_chapter.html)
+  - [📝 5.1. Iteration and Concurrency](https://rust-lang.github.io/async-book/05_streams/02_iteration_and_concurrency.html)
 
 ## Notes
 
