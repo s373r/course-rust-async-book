@@ -37,7 +37,7 @@ Status: 🚧 `[work in progress]`
   - [📝 7.3. Recursion](https://rust-lang.github.io/async-book/07_workarounds/04_recursion.html)
   - [📝 7.4. async in Traits](https://rust-lang.github.io/async-book/07_workarounds/05_async_in_traits.html)
 - [📝 8. The Async Ecosystem](https://rust-lang.github.io/async-book/08_ecosystem/00_chapter.html)
-- [✏️ 9. Final Project: Building a Concurrent Web Server with Async Rust](https://rust-lang.github.io/async-book/09_example/00_intro.html)
+- [✏️ 9. Final Project: Building a Concurrent Web Server with Async Rust](09_final_project/src/main.rs)
   - 9.1. Running Asynchronous Code
   - 9.2. Handling Connections Concurrently
   - 9.3. Testing the TCP Server
