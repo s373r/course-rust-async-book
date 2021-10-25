@@ -31,6 +31,11 @@ Status: 🚧 `[work in progress]`
   - 👷 6.3. `TODO` Spawning
   - 👷 6.4. `TODO` Cancellation and Timeouts
   - 👷 6.5. `TODO` FuturesUnordered
+- [📝 7. Workarounds to Know and Love](https://rust-lang.github.io/async-book/07_workarounds/01_chapter.html)
+  - [📝 7.1. ? in async Blocks](https://rust-lang.github.io/async-book/07_workarounds/02_err_in_async_blocks.html)
+  - [📝 7.2. Send Approximation](https://rust-lang.github.io/async-book/07_workarounds/03_send_approximation.html)
+  - [📝 7.3. Recursion](https://rust-lang.github.io/async-book/07_workarounds/04_recursion.html)
+  - [📝 7.4. async in Traits](https://rust-lang.github.io/async-book/07_workarounds/05_async_in_traits.html)
 
 ## Notes
 
