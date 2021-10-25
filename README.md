@@ -21,6 +21,7 @@ Status: 🚧 `[work in progress]`
   - [✏️ 2.3. Applied: Build an Executor](02_execution/src/main.rs#L90)
   - [📝 2.4. Executors and System IO](https://rust-lang.github.io/async-book/02_execution/05_io.html)
 - [📝 3. async/.await](https://rust-lang.github.io/async-book/03_async_await/01_chapter.html)
+- [✏️ 4. Pinning](04_pinning/src/main.rs)
 
 ## Notes
 
