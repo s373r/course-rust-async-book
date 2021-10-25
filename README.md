@@ -15,6 +15,11 @@ Status: 🚧 `[work in progress]`
   - [📝 1.1. Why Async?](https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html)
   - [📝 1.2. The State of Asynchronous Rust](https://rust-lang.github.io/async-book/01_getting_started/03_state_of_async_rust.html)
   - [✏️ 1.3. async/.await Primer](01_getting_started/src/main.rs)
+- [📝 2. Under the Hood: Executing Futures and Tasks](https://rust-lang.github.io/async-book/02_execution/01_chapter.html)
+  - [📝 2.1. The Future Trait](https://rust-lang.github.io/async-book/02_execution/02_future.html) 
+  - [✏️ 2.2. Task Wakeups with Waker](02_execution/src/main.rs)
+  - 📝 2.3. Applied: Build an Executor
+  - 📝 2.4. Executors and System IO
 
 ## Notes
 
