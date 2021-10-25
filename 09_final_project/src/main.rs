@@ -17,8 +17,10 @@
 // `cargo test` - run unit-tests
 //
 // -- Revisions --
-// To view changes between 9. and 9.3 please check commit history:
-// each chapter have its own related commit
+// 0) https://github.com/s373r/course-rust-async-book/blob/9/09_final_project/src/main.rs
+// 1) https://github.com/s373r/course-rust-async-book/compare/9..9.1
+// 2) https://github.com/s373r/course-rust-async-book/compare/9.1..9.2
+// 3) https://github.com/s373r/course-rust-async-book/compare/9.2..9.3
 
 use async_std::io::{Read, Write};
 use async_std::net::TcpListener;
