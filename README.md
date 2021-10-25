@@ -18,7 +18,7 @@ Status: 🚧 `[work in progress]`
 - [📝 2. Under the Hood: Executing Futures and Tasks](https://rust-lang.github.io/async-book/02_execution/01_chapter.html)
   - [📝 2.1. The Future Trait](https://rust-lang.github.io/async-book/02_execution/02_future.html) 
   - [✏️ 2.2. Task Wakeups with Waker](02_execution/src/main.rs#L9)
-  - 📝 2.3. Applied: Build an Executor
+  - [✏️ 2.3. Applied: Build an Executor](02_execution/src/main.rs#L90)
   - 📝 2.4. Executors and System IO
 
 ## Notes
