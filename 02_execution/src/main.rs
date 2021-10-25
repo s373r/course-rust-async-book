@@ -172,7 +172,13 @@ fn main() {
                     // `Pin<Box<dyn Future<Output = T> + Send + 'static>>`.
                     // We can get a `Pin<&mut dyn Future + Send + 'static>`
                     // from it by calling the `Pin::as_mut` method.
-                    if let Poll::Pending = future.as_mut().poll(context) {
+                    //
+                    // NOTE: the following line produces a lint warning:
+                    //       > warning: redundant pattern matching, consider using `is_pending()`
+                    //       ...
+                    // if let Poll::Pending = future.as_mut().poll(context) {
+                    //       ... to fix that we use:
+                    if future.as_mut().poll(context).is_pending() {
                         // We're not done processing the future, so put it
                         // back in its task to be run again in the future.
                         *future_slot = Some(future);
