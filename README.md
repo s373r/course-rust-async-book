@@ -8,6 +8,7 @@ Status: 🚧 `[work in progress]`
 
 - 📝 - a link to a book page
 - ✏️ - a link to an `.rs` file (code)
+- 👷 - a page under construction in the course
 
 ## Index
 
@@ -24,6 +25,12 @@ Status: 🚧 `[work in progress]`
 - [✏️ 4. Pinning](04_pinning/src/main.rs)
 - [📝 5. Streams](https://rust-lang.github.io/async-book/05_streams/01_chapter.html)
   - [📝 5.1. Iteration and Concurrency](https://rust-lang.github.io/async-book/05_streams/02_iteration_and_concurrency.html)
+- [📝 6. Executing Multiple Futures at a Time](https://rust-lang.github.io/async-book/06_multiple_futures/01_chapter.html)
+  - [📝 6.1. join!](https://rust-lang.github.io/async-book/06_multiple_futures/02_join.html)
+  - [📝 6.2. select!](https://rust-lang.github.io/async-book/06_multiple_futures/03_select.html)
+  - 👷 6.3. `TODO` Spawning
+  - 👷 6.4. `TODO` Cancellation and Timeouts
+  - 👷 6.5. `TODO` FuturesUnordered
 
 ## Notes
 
