@@ -18,31 +18,35 @@
 // To view changes between 9. and 9.3 please check commit history:
 // each chapter have its own related commit
 
+use async_std::net::TcpListener;
+use async_std::net::TcpStream;
+use async_std::prelude::*;
 use async_std::task;
+use async_std::task::spawn;
+use futures::stream::StreamExt;
 use std::fs;
-use std::io::prelude::*;
-use std::net::TcpListener;
-use std::net::TcpStream;
 use std::time::Duration;
 
 #[async_std::main]
 async fn main() {
-    // Listen for incoming TCP connections on localhost port 7878
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
-
-    // Block forever, handling each request that arrives at this IP address
-    for stream in listener.incoming() {
-        let stream = stream.unwrap();
-
-        // Warning: This is not concurrent!
-        handle_connection(stream).await;
-    }
+    let listener = TcpListener::bind("127.0.0.1:7878").await.unwrap();
+    listener
+        .incoming()
+        // NOTE: use None as a limit we create N threads in a reactor
+        //       to process incoming connections
+        //       , where N is CPU count
+        .for_each_concurrent(/* limit */ None, |stream| async move {
+            let stream = stream.unwrap();
+            // NOTE: spawn a task not a thread
+            spawn(handle_connection(stream));
+        })
+        .await;
 }
 
 async fn handle_connection(mut stream: TcpStream) {
     // Read the first 1024 bytes of data from the stream
     let mut buffer = [0; 1024];
-    stream.read(&mut buffer).unwrap();
+    stream.read(&mut buffer).await.unwrap();
 
     let get = b"GET / HTTP/1.1\r\n";
     let sleep = b"GET /sleep HTTP/1.1\r\n";
@@ -62,6 +66,6 @@ async fn handle_connection(mut stream: TcpStream) {
     // Write response back to the stream,
     // and flush the stream to ensure the response is sent back to the client
     let response = format!("{}{}", status_line, contents);
-    stream.write(response.as_bytes()).unwrap();
-    stream.flush().unwrap();
+    stream.write(response.as_bytes()).await.unwrap();
+    stream.flush().await.unwrap();
 }
