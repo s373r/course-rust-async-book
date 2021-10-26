@@ -41,6 +41,11 @@ Status: 🚧 `[work in progress]`
   - 9.1. Running Asynchronous Code
   - 9.2. Handling Connections Concurrently
   - 9.3. Testing the TCP Server
+- 👷 10. `TODO` I/O
+  - 👷 10.1. `TODO` AsyncRead and AsyncWrite
+- 👷 11. `TODO` Asynchronous Design Patterns: Solutions and Suggestions
+  - 👷 11.1. `TODO` Modeling Servers and the Request/Response Pattern
+  - 👷 11.2. `TODO` Managing Shared State
 
 ## Notes
 
