@@ -2,7 +2,9 @@
 
 Course link: https://rust-lang.github.io/async-book/
 
-Status: 🚧 `[work in progress]`
+Status: ✅*
+
+(* - Some pages are under construction, need to come back a bit later)
 
 ### Index legend
 
